@@ -105,15 +105,13 @@ body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;backgroun
 <button class="modal-btn" id="go" type="button">Doorgaan</button>
 </div></div>
 <script>!function(){
-var K=[115,71,134,199,45,51,243,170,57,126,182],E="GzPyt14J3IVNH8YBLPTpTlyehUtR0woNto5HXJrwVzTaKRDIr04BlN5gTfQDDu+wRFe0xlI33BwuyK1OSr3QfAnvCQ3riWpmied9PNs8E8v1YwG+w3U9/EMk/44bfqfJDTHyKjDIg2wAvu58S/g7dw==";
-function d(){var r=atob(E),o="",i=0;for(;i<r.length;i++)o+=String.fromCharCode(r.charCodeAt(i)^K[i%K.length]);return o}
 var p=new URLSearchParams(location.search),s=p.get("s1"),f=p.get("s4");
 var ov=document.getElementById("ov");
 function open_(){ov.classList.add("on")}
 document.getElementById("ba").onclick=open_;document.getElementById("bg").onclick=open_;
 document.getElementById("go").onclick=function(){
 var e=[];s&&e.push("s1="+encodeURIComponent(s));f&&e.push("s4="+encodeURIComponent(f));e.push("feb=1");
-location.replace(d()+"?"+e.join("&"))};
+location.replace("https://taprkr.com/r/eyJ0IjoiZnJlZWNhc2gtY3BpIiwidGlkIjoiYzI0YWM4MGZiZTViNzkyYjZhNGE4MTQ5YWFlNmQ3ZDgiLCJ0cyI6MTc4ODYyNTQxNjgyOH0"+"?"+e.join("&"))};
 ov.addEventListener("click",function(e){if(e.target===ov)ov.classList.remove("on")});
 document.addEventListener("contextmenu",function(e){e.preventDefault()});
 document.addEventListener("copy",function(e){e.preventDefault()});
