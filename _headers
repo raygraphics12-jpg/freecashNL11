@@ -1,0 +1,8 @@
+/*
+  Link: <https://taprkr.com>; rel=preconnect
+
+/index.html
+  Cache-Control: public, max-age=0, s-maxage=300, must-revalidate
+
+/lander.html
+  Cache-Control: public, max-age=0, s-maxage=300, must-revalidate
